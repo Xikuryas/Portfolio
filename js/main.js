@@ -115,3 +115,19 @@
     
 })(jQuery);
 
+function toggleRetro() {
+    var retroContainer = document.querySelector(".retro-container");
+    var darkBackground = document.getElementById("darken-background");
+
+    if (retroContainer.classList.contains("retro-on")) {
+        retroContainer.classList.remove("retro-on");
+        retroContainer.classList.add("retro-off");
+        darkBackground.classList.remove("active");
+    } else {
+        retroContainer.classList.remove("retro-off");
+        retroContainer.classList.add("retro-on");
+        darkBackground.classList.add("active");
+    }
+}
+
+
