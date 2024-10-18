@@ -39,11 +39,12 @@
             <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
                     <a href="#home" class="nav-item nav-link active">Accueil</a>
+                    <a href="#portfolio" class="nav-item nav-link">Projets</a>
                     <a href="#about" class="nav-item nav-link">À propos</a>
                     <a href="#qualification" class="nav-item nav-link">Scolarité</a>
                     <a href="#skill" class="nav-item nav-link">Compétences</a>
                     <!-- <a href="#service" class="nav-item nav-link">Stage</a> -->
-                    <a href="#portfolio" class="nav-item nav-link">Projets</a>
+                    
                     <!-- <a href="#testimonial" class="nav-item nav-link">Review</a> -->
                     <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
                     <a href="#contact" class="nav-item nav-link">Contact</a>
@@ -100,6 +101,91 @@
         </div>
         <!-- Header End -->
 
+
+         <!-- Portfolio Start -->
+         <div class="container-fluid pt-5 pb-3" id="portfolio">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projets</h1>
+                    <h1 class="position-absolute text-uppercase text-primary">Mes Projets</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mb-2">
+                        <ul class="list-inline mb-4" id="portfolio-flters">
+                            <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Tout</li>
+                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Jeux de rôle</li>
+                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Gamejam</li>
+                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Court-métrage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" id="portfolioFirstItem">
+                        <div class="position-relative overflow-hidden mb-2 retro-container" onmouseover="toggleRetro()" onmouseout="toggleRetro()">
+                            <div class="longue-vue">
+                                <a href="retro.html">
+                                    <img id="retroImage" class="img-fluid rounded w-100" src="img/retroM.png" alt="Retro Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    
+                    <div id="line"></div>
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid rounded w-100" src="img/GameJam.png" alt="">
+                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                                <a href="img/GameJam.png" data-lightbox="portfolio">
+                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                        <div class="position-relative overflow-hidden mb-2" style="width: 500px; height: 300px;">
+                            <img class="img-fluid rounded w-100 h-100" src="img/SousLaSemelle.png" alt="" style="object-fit: fill;">
+                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                                <a href="img/SousLaSemelle.png" data-lightbox="portfolio">
+                                    <i class="fa fa-video text-white" style="font-size: 60px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                        <div class="position-relative overflow-hidden mb-2" >
+                            <img class="img-fluid rounded w-100" src="img/thumbnailFloorIsLava.png" alt="">
+                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                                <a href="img/thumbnailFloorIsLava.png" data-lightbox="portfolio">
+                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-4 col-md-6 mb-4 portfolio-item second first">
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
 
         <!-- About Start -->
         <div class="container-fluid py-5" id="about">
@@ -189,12 +275,25 @@
                             <div class="position-relative mb-4">
                                 <i class="far fa-dot-circle text-primary position-absolute"
                                     style="top: 2px; left: -32px;"></i>
-                                <h5 class="font-weight-bold mb-1">Stagiaire développeur d'intelligence décisionnelle</h5>
-                                <p class="mb-2"><strong>Another Brain</strong> | <small>03/04 - 31/08 2023 </small></p>
-                                <p>Modélisation 3D pour la visualisation et l'élaboration de dataset pour tester la partie 
-                                    traitement d'image d'un programme d'intelligence artificielle. Python et Blender.
+                                <h5 class="font-weight-bold mb-1">Auto-entrepreneur développeur d'applications</h5>
+                                <p class="mb-2"><strong>Supplay - Intérim</strong> | <small>24/01 - En cours 2024 </small></p>
+                                <p>Développement d'applications avec l'outil Outsystem pour les interfaces et PHP pour la liaison serveur.<br>
+                                    Parmis ces applications :<br> 
+                                        -Un outil de gestion des données en base.<br>
+                                        -Un outil de visualisation et historisation de documents intérimaire pour contrôle de relevé d'heures.<br>
+                                        -Une application d'aide aux agences dans les présentations commerciales.
                                 </p>
                             </div>
+                            
+                                <div class="position-relative mb-4">
+                                    <i class="far fa-dot-circle text-primary position-absolute"
+                                        style="top: 2px; left: -32px;"></i>
+                                    <h5 class="font-weight-bold mb-1">Stagiaire développeur d'intelligence décisionnelle</h5>
+                                    <p class="mb-2"><strong>Another Brain</strong> | <small>03/04 - 31/08 2023 </small></p>
+                                    <p>Modélisation 3D pour la visualisation et l'élaboration de dataset pour tester la partie 
+                                        traitement d'image d'un programme d'intelligence artificielle. Python et Blender.
+                                    </p>
+                                </div>
                             <div class="position-relative mb-4">
                                 <i class="far fa-dot-circle text-primary position-absolute"
                                     style="top: 2px; left: -32px;"></i>
@@ -368,90 +467,7 @@
         <!-- Services End -->
 
 
-        <!-- Portfolio Start -->
-        <div class="container-fluid pt-5 pb-3" id="portfolio">
-            <div class="container">
-                <div class="position-relative d-flex align-items-center justify-content-center">
-                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projets</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Mes Projets</h1>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center mb-2">
-                        <ul class="list-inline mb-4" id="portfolio-flters">
-                            <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Tout</li>
-                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Jeux de rôle</li>
-                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Gamejam</li>
-                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Théâtre</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" id="portfolioFirstItem">
-                        <div class="position-relative overflow-hidden mb-2 retro-container" onmouseover="toggleRetro()" onmouseout="toggleRetro()">
-                            <div class="longue-vue">
-                                <a href="retro.html">
-                                    <img id="retroImage" class="img-fluid rounded w-100" src="img/retroM.png" alt="Retro Image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                 
-                    
-                    <div id="line"></div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item second first">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
+       
 
 
         <!-- Testimonial Start -->
